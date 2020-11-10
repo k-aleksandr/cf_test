@@ -1,0 +1,19 @@
+name: Run CF
+on:
+  pull_request:
+    branches: [master]
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout Reapsaw repo
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Install python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.6
