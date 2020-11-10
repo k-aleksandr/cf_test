@@ -1,10 +1,9 @@
 name: Run CF
-on:
-  pull_request:
-    branches: [master]
+on: push 
+
 
 jobs:
-  scan:
+  test:
     runs-on: ubuntu-latest
     steps:
 
