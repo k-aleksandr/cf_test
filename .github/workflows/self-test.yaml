@@ -48,6 +48,7 @@ jobs:
       - name: AWS CLI
         run: |
           aws s3 ls
+          ls -la
       
 
       
