@@ -15,10 +15,10 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha }}
 
-      - name: Install python
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.6
+      # - name: Install python
+      #   uses: actions/setup-python@v2
+      #   with:
+      #     python-version: 3.6
 
       # - name: Install aws cli
       #   run: |
@@ -45,7 +45,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_KEY }}
           aws-region: us-east-1
 
-      - name: Copy files to the test website with the AWS CLI
+      - name: AWS CLI
         run: |
           aws s3 ls
       
