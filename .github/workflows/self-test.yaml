@@ -51,7 +51,8 @@ jobs:
           ls -la
           sudo apt install zip -y
           zip -r filename.zip devo-engine
-          aws s3 filename.zip s3://alex-test-988442/lambdas/lambda_function.zip
+          ls -la
+          aws s3 cp filename.zip s3://alex-test-988442/lambdas/lambda_function.zip
       
 
       
