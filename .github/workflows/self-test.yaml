@@ -49,7 +49,7 @@ jobs:
         run: |
           aws s3 ls
           ls -la
-          apt install zip -y
+          sudo apt install zip -y
       
 
       
