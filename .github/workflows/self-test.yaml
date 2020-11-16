@@ -56,7 +56,7 @@ jobs:
           echo "Uploaded"
           aws s3 cp s3://alex-test-988442/lambdas/123.yaml temp.yaml
           sleep 15
-          aws cloudformation update-stack --stack-name 	new-stack-name --template-url https://s3://alex-test-988442/lambdas/123.yaml 
+          aws cloudformation update-stack --stack-name 	new-stack-name --template-url https://s3.amazonaws.com/alex-test-988442/lambdas/123.yaml 
 
 
 
