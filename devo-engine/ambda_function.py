@@ -11,5 +11,5 @@ import zlib
 from collections import OrderedDict
 
 
-name = "traceur-agg-log-wsj-waf23456"
+name = "traceur-agg-log-wsj-waf234567"
 print(name.split("-")[2])
