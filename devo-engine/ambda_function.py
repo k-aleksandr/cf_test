@@ -9,5 +9,7 @@ import json
 import re
 import zlib
 from collections import OrderedDict
-from devo_engine import *
 
+
+name = "traceur-agg-log-wsj-waf"
+print(name.split("-")[2])

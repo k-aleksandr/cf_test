@@ -1,0 +1,15 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+  Testing:
+    Type: AWS::Lambda::Function
+    DeletionPolicy: Retain
+    Properties:
+      Handler: lambda_function.lambda_handler    
+      Code: 
+        S3Bucket: alex-test-988442
+        S3Key: lambdas/lambda_function.zip      
+      Runtime: python3.7
+      Description: ''
+      MemorySize: 128
+      Timeout: 3
+      Role: 'arn:aws:iam::351340091558:role/service-role/testing-role-rnykh886'

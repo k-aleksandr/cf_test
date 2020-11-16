@@ -53,6 +53,17 @@ jobs:
           zip -r filename.zip devo-engine
           ls -la
           aws s3 cp filename.zip s3://alex-test-988442/lambdas/lambda_function.zip
+          echo "Uploaded"
+          aws s3 cp s3://alex-test-988442/lambdas/123.yaml temp.yaml
+          aws cloudformation deploy --template-file 123.yaml  --stack-name new-stack-name  
+
+
+
+
+
+
+
+
       
 
       
